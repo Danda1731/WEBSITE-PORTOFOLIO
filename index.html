@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <div class="nav" id="nav">
+      <nav id="nav">
+        <div class="logo">
+          <h3><span>Rizky </span>Danda</h3>
+        </div>
+        <ul id="menu">
+          <li><a href="#nav">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="toogle">
+          <input type="checkbox" id="check" />
+          <i class="fa-solid fa-bars" id="button"></i>
+        </div>
+      </nav>
+    </div>
+    <div class="content">
+      <div class="home" id="home">
+        <div class="text">
+          <h1 data-aos="fade-right" data-aos-duration="1500">Halo! Saya</h1>
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            Rizky Danda
+          </h1>
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-delay="600"
+          >
+            <span id="element"></span>
+          </h3>
+        </div>
+        <div class="imgprofil">
+          <div
+            class="bg-shape1"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          ></div>
+          <div
+            class="bg-shape2"
+            data-aos="zoom-in-right"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          ></div>
+          <img
+            src="img/dandapng.png"
+            alt="Foto Profil"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          />
+        </div>
+      </div>
+      
+      <!-- typed js -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- setup animation -->
+      <script>
+        var typed = new Typed("#element", {
+          strings: ["Web Developer", "UI/UX Designer"],
+          typeSpeed: 50,
+          loop: true,
+        });
+      </script>
+
+      <div class="about" id="about">
+        <h3>About me</h3>
+        <div class="text">
+          <div class="text1" data-aos="fade-right" data-aos-duration="1000">
+            <h4>Description</h4>
+            <p>
+              Hai saya Mohhamad Rizky Herlenda Tiar, panggil saja dengan Danda. Saya adalah siswa SMKN 1 Denpasar 
+              dengan jurusan Rekayasa Perangkat Lunak. Saya tertarik dengan dunia website dan programming, Saya
+              tertarik untuk mempelajarinya. Saya ingin hasil dari ketertarikan ini memberikan maanfaat bagi dunia, 
+              diri sendiri, dan orang-orang sekitar
+            </p>
+          </div>
+          <div class="text2" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Hobby</h4>
+            <ul>
+              <li>Mendengarkan Musik</li>
+              <li>Menonton Film</li>
+              <li>Memancing</li>
+              <li>Bermain Game</li>
+            </ul>
+          </div>
+          <div class="text3" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Goals</h4>
+            <ul>
+              <li>Menguasai seputar web design</li>
+              <li>Meningkatkan public speaking</li>
+              <li>Menguasai beberapa aplikasi foto/video editing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill" id="skill">
+        <h3>Skill</h3>
+        <div class="skillbox">
+          <div
+            class="skillbox1"
+            data-aos="flip-right"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <img src="img/html.png" alt="HTML" />
+            <h4>HTML</h4>
+          </div>
+          <div class="skillbox2" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/css.png" alt="CSS" />
+            <h4>CSS</h4>
+          </div>
+        </div>
+        <h3>Studied</h3>
+        <div class="skillbox">
+          <div
+            class="studiedbox1"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
+            <img src="img/javascript.png" alt="JS" />
+            <h4>JS</h4>
+          </div>
+          <div class="studiedbox2" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/python.png" alt="PYTHON" />
+            <h4>Python</h4>
+          </div>
+          <div class="studiedbox3" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/java.png" alt="JAVA" />
+            <h4>Java</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="project" id="project">
+        <h3>Project</h3>
+        <div class="projectbox">
+          <img
+            src="img/webcuaca.png"
+            alt="Web Cuaca"
+            class="horizontal"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+          <div class="text" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Website Ramalan Cuaca</h4>
+            <p>
+              Website yang dibuat untuk mendapatkan informasi cuaca terkini,
+              didesain dengan API membuat data secara realtime update.
+            </p>
+          </div>
+          <img
+            src="img/figma.png"
+            alt="Mobile App"
+            class="horizontal"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+          <div class="text" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Rancangan Mobile Application</h4>
+            <p>
+              Ini merupakan rancangan aplikasi mobile yang berisi mengenai galeri seni 
+              sejumlah karya terbaik di dunia, dibuat menggunakan figma dan
+              diberi sentuhan prototype agar lebih interaktif.
+            </p>
+          </div>
+          <img
+            src="img/poster.jpg"
+            alt="Poster"
+            class="vertikal"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+          <div class="text" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Poster Cerita Instagram</h4>
+            <p>
+              Selain website dan UI/UX, saya suka mendesain beberapa Poster
+              untuk ucapan event tertentu dan diposting pada cerita instagram.
+            </p>
+          </div>
+          <img
+            src="img/mitapp.png"
+            alt="Jelajah Kuliner"
+            class="horizontal"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />
+          <div class="text" data-aos="fade-left" data-aos-duration="1000">
+            <h4>Aplikasi Nonton Anime</h4>
+            <p>
+              Aplikasi mobile pertama yang saya buat dengan menggunakan MIT App
+              Inventor. Ini adalah tugas akhir untuk mata pelajaran Pemrograman
+              Dasar di kelas 10. Proses pembuatan aplikasi ini kurang lebih sama
+              dengan membuat UI/UX. Aplikasi ini berisi mengenai daftar anime di beberapa musim yang ada 
+              di Jepang. Bertujuan untuk menghibur pecinta anime terutama saya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h3>Contact</h3>
+        <div class="contactForm">
+          <form>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Nama</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required=""></textarea>
+              <span>Silahkan ketik pesan Anda..</span>
+            </div>
+            <div class="button">
+              <button>Kirim</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="address">
+        <h4>Addres</h4>
+        <p>Jalan Raya Buduk Gang.Durian I</p>
+      </div>
+      <div class="link">
+        <h4>Ikuti Saya</h4>
+        <div class="icon">
+          <a href="mailto:sdwi54145@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+          <a href="https://github.com/Danda1731"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/dndhrlnd?igsh=bnNzcWozeXpwZm05"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>©Copyright 2024 by Rizky Danda</p>
+      </div>
+    </footer>
+
+    <!-- icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
